@@ -1,0 +1,22 @@
+CNR2202990601001
+# Module
+# ******
+0 CM= "ist.ac.simulador.nucleo.SCompoundModule" Name= "Arch Root" Gui= "null" NB= 0 NM= 3 NC= 2
+  # Connections
+  0 C= "ist.ac.simulador.nucleo.SConnection" Name= "C2fd6" NBits= 8 NSegments= 1
+    Po= "19a36c1ca86-0" Pd= "19a36c1f5d2-0" Np= 2
+      X= 337 Y= 175
+      X= 438 Y= 175
+  1 C= "ist.ac.simulador.nucleo.SConnection" Name= "C4bf0" NBits= 8 NSegments= 1
+    Po= "19a36c1f5f1" Pd= "19a36c2683d-0" Np= 2
+      X= 548 Y= 176
+      X= 693 Y= 176
+  # Bridges
+  # Modules
+  0 M= "ist.ac.simulador.modules.ModuleInput" Name= "entrada" NPorts= 1 Conf= "4@3" X= 232 Y= 160
+       P= "OUT" CIn= 0 NBit= 4 StBit= 0 StConnBit= 0 PId= "19a36c1ca86-0" Fixed= -1
+  1 M= "ist.ac.simulador.modules.ModulePROM" Name= "PROM" NPorts= 2 Conf= "8x8@3" X= 433 Y= 161
+       P= "ADDRESS" CIn= 0 NBit= 8 StBit= 0 StConnBit= 0 PId= "19a36c1f5d2-0" Fixed= -1
+       P= "DATA" CIn= 1 NBit= 8 StBit= 0 StConnBit= 0 PId= "19a36c1f5f1" Fixed= -1
+  2 M= "ist.ac.simulador.modules.ModuleLeds" Name= "Leds" NPorts= 1 Conf= "8@3" X= 688 Y= 160
+ HIGHCOLOR= "Red" LOWCOLOR= "Black" ZCOLOR= "Grey"       P= "IN" CIn= 1 NBit= 8 StBit= 0 StConnBit= 0 PId= "19a36c2683d-0" Fixed= -1
